@@ -8,11 +8,16 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            You have clicked the button {this.props.clicks} times!
-          </p>
-          <button onClick={this.props.onClick}>Click me!</button>
         </header>
+        <main className="layout">
+        <div className="snake-area"></div>
+        <div className="tetris-area"></div>
+        <div className="data-area"></div>
+        </main>
+        <p>
+          You have clicked the button {this.props.clicks} times!
+        </p>
+        <button onClick={this.props.onClick}>Click me!</button>
       </div>
     );
   }

@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,4 +29,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: auto 25%;
+  grid-template-rows: 38% 62%;
+  margin: 0 auto;
+}
+.snake-area{
+  grid-column: 0;
+  grid-row: 0;
+  background-color: blue;
+}
+.tetris-area{
+  grid-column: 0;
+  grid-row: 1;
+  background-color: green;
+}
+.data-area{
+  grid-column: 1;
+  grid-row-start: 0;
+  grid-row-end: 1;
+  background-color: red;
 }
