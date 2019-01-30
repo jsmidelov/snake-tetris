@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './SnakeTetris';
 import * as serviceWorker from './serviceWorker';
 
 let model = {clicks: 0};
