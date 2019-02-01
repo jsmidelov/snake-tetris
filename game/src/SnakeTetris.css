@@ -33,7 +33,7 @@
 
 .layout {
   display: grid;
-  grid-template-columns: auto 25%;
+  grid-template-columns: 200px 200px;
   grid-template-rows: 38% 62%;
   margin: 0 auto;
 }
