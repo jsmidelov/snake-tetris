@@ -1,18 +1,22 @@
+:root{
+  --cellzize: 32px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+  height: 10vmin;
+} */
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -33,23 +37,30 @@
 
 .layout {
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 38% 62%;
-  margin: 0 auto;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: "snake" "tetris";
+  margin: 0 10vw;
 }
 .snake-area{
-  grid-column: 0;
-  grid-row: 0;
+  grid-column: 1;
+  grid-row: 1;
   background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(6, var(--cellzize));
+  grid-template-rows: repeat(4, var(--cellzize));
 }
 .tetris-area{
-  grid-column: 0;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2;
   background-color: green;
+  display: grid;
+  grid-template-columns: repeat(6, var(--cellzize));
+  grid-template-rows: repeat(16, var(--cellzize));
 }
 .data-area{
-  grid-column: 1;
-  grid-row-start: 0;
-  grid-row-end: 1;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
   background-color: red;
+  display: block;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import SnakeGame from './snake-game/snake-game';
 import './SnakeTetris.css';
 
 class App extends Component {
@@ -7,17 +7,19 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <span>
+            Snake Tetris
+          </span>
         </header>
         <main className="layout">
-        <div className="snake-area"></div>
-        <div className="tetris-area"></div>
-        <div className="data-area"></div>
+          <SnakeGame className="snake-area"></SnakeGame>
+          <div className="tetris-area">Tetris area</div>
+          <div className="data-area">Data area</div>
         </main>
-        <p>
+        {/* <p>
           You have clicked the button {this.props.clicks} times!
         </p>
-        <button onClick={this.props.onClick}>Click me!</button>
+        <button onClick={this.props.onClick}>Click me!</button> */}
       </div>
     );
   }
